@@ -1,0 +1,9 @@
+name: forge
+on: [pull_request]
+jobs:
+  ci-scope:
+    # Reports a check named exactly like the real one, the way an agent-written workflow could.
+    name: CI Scope
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this check is produced by GitHub Actions, not by the CI Scope app"
